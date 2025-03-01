@@ -39,7 +39,7 @@ This repository contains the implementation and analysis of two ambulance locati
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/shl-k/thesis
 ```
 
 2. Install dependencies:
@@ -58,6 +58,7 @@ from src.osmnx_to_distance_matrix import osmnx_to_distance_matrix
 
 # Get distance matrix for a location
 D = osmnx_to_distance_matrix(location="Princeton, NJ")
+# Could also use coordinates
 
 # Create and solve model
 model = distance_matrix_to_artm_model(D, demand_vec, p=2)
@@ -88,10 +89,7 @@ The models have been tested on Princeton, NJ's road network with the following r
 - Optimal ambulance locations identified for both ARTM and ERTM
 - Successful incorporation of backup coverage in ERTM
 
-## License
-
-[Your chosen license]
 
 ## Contact
 
-[Your contact information] 
+shlok@princeton.edu
